@@ -14,7 +14,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(IllegalArgumentException.class)
     public ResponseEntity<String> handleIllegalArgumentException(IllegalArgumentException e) {
         log.warn("Illegal argument exception: {}", e.getMessage());
-        return org.springframework.http.ResponseEntity
+        return ResponseEntity
                 .badRequest()
                 .body(e.getMessage());
     }
