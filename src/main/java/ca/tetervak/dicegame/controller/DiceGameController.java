@@ -37,7 +37,7 @@ public class DiceGameController {
     @Operation(summary = "Rolls a specified number of dice",
             description = "Generates a random roll of the specified number of dice, with each die having 6 sides.")
     @Parameters(
-            @Parameter(name = "numberOfDice", description = "Number of dice to roll", required = true, example = "2")
+            @Parameter(name = "numberOfDice", description = "Number of dice to roll", required = false, example = "2")
     )
     @ApiResponses(
             @ApiResponse(responseCode = "200",
